@@ -33,7 +33,7 @@ const FeaturedProduct = () => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="bg-white min-h-screen px-4 py-8">
+    <div className="bg-white min-h-screen px-4 py-8 ">
       {/* Heading */}
       <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
         Tranding Products
@@ -203,7 +203,7 @@ const FeaturedProduct = () => {
         {/* Right Section: Image */}
         <div className="relative flex-1 flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
           {/* Image */}
-          <div className="relative w-[400px] h-[400px] flex justify-center items-center bg-pink-100 rounded-full">
+          <div className="relative w-full h-auto flex justify-center items-cent">
             <Image
               src="/Hero3/sofa1.png"
               alt="Italian Sofa"

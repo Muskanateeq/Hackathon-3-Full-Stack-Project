@@ -66,10 +66,10 @@ const Navbar = () => {
             <Link href="/" className="hover:text-pink-500 transition">
               Home
             </Link>
-            <Link href="/pages" className="hover:text-pink-500 transition">
+            <Link href="/pagess" className="hover:text-pink-500 transition">
               Pages
             </Link>
-            <Link href="/products" className="hover:text-pink-500 transition">
+            <Link href="/product" className="hover:text-pink-500 transition">
               Products
             </Link>
             <Link href="/blog" className="hover:text-pink-500 transition">
@@ -84,7 +84,7 @@ const Navbar = () => {
           </div>
 
           {/* Right Section: Hamburger Menu and Search Bar */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 pr-10 md:pr-10 sm:pr-10">
             {/* Hamburger Icon */}
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -130,13 +130,13 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/pages"
+              href="/pagess"
               className="block px-4 py-2 hover:bg-pink-100 transition"
             >
               Pages
             </Link>
             <Link
-              href="/products"
+              href="/product"
               className="block px-4 py-2 hover:bg-pink-100 transition"
             >
               Products

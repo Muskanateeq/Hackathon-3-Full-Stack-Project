@@ -1,36 +1,38 @@
+import Image from "next/image"
+import Link from "next/link"
+
 export default function Footer() {
     return (
-      <footer className="bg-gray-100 text-gray-700">
-        <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <footer className="bg-gray-100 text-gray-700 ">
+        <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 pl-12">
           {/* Footer Column 1 */}
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4 font-sans">Hekto</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 font-sans pl-12">Hekto</h3>
   
 {/* Newsletter Signup */}
-<form className="flex">
+<form className="flex pl-3">
   <input
     type="email"
-    placeholder="Enter Email Address"
-    className="w-full px-2 py-0.5 text-sm border border-gray-300 "
+    placeholder="Email"
+    className="w-28 px-2 py-0.5 text-sm border border-gray-300 "
   />
-  <button
-    type="submit"
-    className="bg-pink-500 text-white px-3 py-0.5 text-sm border-l border-pink-500 hover:bg-pink-600 transition"
-  >
-    Sign Up
-  </button>
+        <div className="flex justify-center  md:justify-start">
+        <Link href="/login"><button className="bg-pink-500 text-white py-2 px-2  hover:bg-pink-600">
+              SignUp
+            </button></Link>
+          </div>
 </form>
 
 
-            <p className="mt-4 text-sm">
+            <p className="mt-4 text-sm pl-12">
               Contact Info: 17 Princess Road, London, Greater London NW1 8JR, UK
             </p>
           </div>
   
           {/* Footer Column 2 */}
           <div>
-            <h4 className="text-lg  mb-4">Categories</h4>
-            <ul className="space-y-2 text-gray-400">
+            <h4 className="text-lg  mb-4 pl-12">Categories</h4>
+            <ul className="space-y-2 text-gray-400 pl-12">
               <li>
                 <a href="#" className="hover:text-pink-500 transition">
                   Laptops & Computers
@@ -61,8 +63,8 @@ export default function Footer() {
   
           {/* Footer Column 3 */}
           <div>
-            <h4 className="text-lg  mb-4">Customer Care</h4>
-            <ul className="space-y-2  text-gray-400">
+            <h4 className="text-lg  mb-4 pl-12">Customer Care</h4>
+            <ul className="space-y-2  text-gray-400 pl-12">
               <li>
                 <a href="#" className="hover:text-pink-500 transition">
                   My Account
@@ -88,8 +90,8 @@ export default function Footer() {
   
           {/* Footer Column 4 */}
           <div>
-            <h4 className="text-lg  mb-4">Pages</h4>
-            <ul className="space-y-2  text-gray-400">
+            <h4 className="text-lg  mb-4 pl-12">Pages</h4>
+            <ul className="space-y-2  text-gray-400 pl-12">
               <li>
                 <a href="#" className="hover:text-pink-500 transition">
                   Blog
@@ -122,26 +124,14 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="bg-gray-200 py-4">
           <div className="container mx-auto flex justify-between items-center">
-            <p className="text-sm text-gray-400">©Webecy - All Rights Reserved</p>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-pink-500 transition"
-              >
-                <i className="fab fa-facebook-f"></i> {/* Replace with React Icons */}
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-pink-500 transition"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-pink-500 transition"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
+            <p className="text-sm text-gray-400 pl-10 md:pl-32 sm:pl-10 lg:pl-32">©Webecy - All Rights Reserved</p>
+            <div className="flex space-x-4 pr-32 md:pr-32 sm:pr-32 lg:pr-32">
+              <Image 
+              src="/footer/Group 205.png"
+              alt="social media icon"
+              width={50}
+              height={50}
+              ></Image>
             </div>
           </div>
         </div>

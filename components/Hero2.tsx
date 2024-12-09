@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProductShowcase() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-200 pt-0">
+    <section className="min-h-screen flex items-center justify-center bg-gray-200 pt-0 px-10">
       <div className="flex flex-col lg:flex-row items-center lg:items-start w-full max-w-6xl px-6 lg:px-12">
         {/* Left Section: Image with Transparent Pink Circle */}
         <div className="relative flex-1 flex justify-center lg:justify-end items-center">
