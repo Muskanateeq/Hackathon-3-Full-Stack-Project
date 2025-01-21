@@ -1,5 +1,3 @@
-// FAQ Page in Next.js with Tailwind CSS
-
 import React from 'react';
 
 const FaqPage = () => {

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link"
 
-
-
 const HeroSection = () => {
   return (
     <section className="relative bg-gray-200 py-16 px-6 sm:px-8 md:px-16 lg:px-24">

@@ -1,13 +1,3 @@
-// import ShoppingCart from "@/components/ShoppingCart"
-
-// const cart = () => {
-//   return (
-//     <ShoppingCart/>
-//   )
-// }
-
-// export default cart
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -76,10 +66,10 @@ const CartPage = () => {
             Shopping Cart
           </h1>
           <Link href="/"><span className="mx-1 text-black">Home</span></Link>
-            <span className="mx-1 text-black">.</span>
-            <Link href="/product"><span className="mx-1 text-black">Products List</span></Link>
-            <span className="mx-1 text-pink-500">.</span>
-            <Link href="/cart"><span className="mx-1 text-pink-500">Cart</span></Link>
+          <span className="mx-1 text-black">.</span>
+          <Link href="/product"><span className="mx-1 text-black">Products List</span></Link>
+          <span className="mx-1 text-pink-500">.</span>
+          <Link href="/cart"><span className="mx-1 text-pink-500">Cart</span></Link>
         </div>
       </div>
 
@@ -103,13 +93,13 @@ const CartPage = () => {
                       {cartItems.map((item) => (
                         <tr key={item.id} className="border-b">
                           <td className="p-4 flex items-center">
-                          <button
-                          onClick={() => handleRemoveItem(item.id)}
-                          className="w-6 h-6 sm:w-8 sm:h-8 border-2 border-gray-300 text-gray-300 rounded-full flex justify-center items-center mr-4 hover:border-gray-600 hover:text-gray-900"
-                          aria-label="Remove"
-                        >
-                          ✖
-                          </button>
+                            <button
+                              onClick={() => handleRemoveItem(item.id)}
+                              className="w-6 h-6 sm:w-8 sm:h-8 border-2 border-gray-300 text-gray-300 rounded-full flex justify-center items-center mr-4 hover:border-gray-600 hover:text-gray-900"
+                              aria-label="Remove"
+                            >
+                              ✖
+                            </button>
 
                             <img
                               src={item.image}
@@ -161,16 +151,16 @@ const CartPage = () => {
                   </div>
                 </>
               ) : (
-                
+
                 <div className="flex flex-wrap mt-4 gap-2 sm:gap-4">
                   <p className="pt-1 font-semibold">Your cart is empty</p>
-                <button
-                  className="bg-pink-500 text-white px-2 sm:px-4 py-1 sm:py-2 text-[clamp(0.75rem,1.5vw,0.875rem)]"
-                  onClick={() => router.push("/product")}
-                >
-                  Continue Shopping
-                </button>
-                
+                  <button
+                    className="bg-pink-500 text-white px-2 sm:px-4 py-1 sm:py-2 text-[clamp(0.75rem,1.5vw,0.875rem)]"
+                    onClick={() => router.push("/product")}
+                  >
+                    Continue Shopping
+                  </button>
+
                 </div>
               )}
             </div>
