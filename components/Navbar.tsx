@@ -1,52 +1,48 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { FaUser, FaHeart, FaShoppingCart, FaSearch, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaUser, FaHeart, FaShoppingCart, FaSearch, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   return (
     <>
       {/* Top Blue Bar */}
       <div className="bg-purple-700 text-white text-sm py-2">
         <div className="container mx-auto flex flex-wrap items-center justify-between px-4">
-          {/* Right Side - Phone and Email */}
-          <div className="flex items-center justify-end space-x-4">
-            <div className="flex items-center space-x-1">
+          <div className="flex items-center justify-center space-x-4">
+            <div className="flex items-center justify-center space-x-1">
               <FaEnvelope className="text-white" />
-              <p className="hidden sm:block">shahsoha@gmail.com |</p>
+              <p>shahsoha@gmail.com</p>
             </div>
             <div className="flex items-center space-x-1">
-              <p className="hidden sm:block">(123) 456-7890</p>
+              <FaPhoneAlt  className="text-white"/>
+              <p>(123) 456-7890</p>
             </div>
           </div>
-          
-          {/* Left Side - English, Currency, and Other Icons */}
-          <div className="flex items-center justify-start space-x-4 sm:space-x-6 w-full sm:w-auto">
-            {/* English Dropdown */}
-            <div className="flex items-center space-x-1">
+          <div className="flex items-center justify-start space-x-4 sm:space-x-6 w-full sm:w-auto mt-2">
+            <div className="flex items-center space-x-1 cursor-pointer">
               <p>English</p>
               <MdKeyboardArrowDown className="text-white" />
             </div>
-            {/* Currency Dropdown */}
-            <div className="flex items-center space-x-1">
+            <div className="flex items-center space-x-1 cursor-pointer">
               <p>USD</p>
               <MdKeyboardArrowDown className="text-white" />
             </div>
-            {/* Login */}
-            <div className="flex items-center space-x-1">
-              <p>Login</p>
+            <div className="flex items-center space-x-1 cursor-pointer">
+              <Link href="/login"><button>Login</button></Link>
               <FaUser className="text-white" />
             </div>
-            {/* Wishlist */}
-            <div className="flex items-center space-x-1">
-              <p className="hidden md:block">Wishlist</p>
-              <FaHeart className="text-white" />
-            </div>
-            {/* Cart */}
-            <div className="flex items-center space-x-1">
+            <div className="flex items-center space-x-1 cursor-pointer">
+              <Link href="/cart"><button>Cart</button></Link>
               <FaShoppingCart className="text-white" />
             </div>
           </div>
@@ -56,39 +52,24 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className="bg-white text-black">
         <div className="container mx-auto flex flex-wrap items-center justify-between p-4">
-          {/* Logo */}
-          <div className="text-lg font-bold">
+          <div className="text-xl font-bold">
             <Link href="/">Hekto</Link>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-6 lg:space-x-8 items-center">
-            <Link href="/" className="hover:text-pink-500 transition">
-              Home
-            </Link>
-            <Link href="/pagess" className="hover:text-pink-500 transition">
-              Pages
-            </Link>
-            <Link href="/product" className="hover:text-pink-500 transition">
-              Products
-            </Link>
-            <Link href="/blog" className="hover:text-pink-500 transition">
-              Blog
-            </Link>
-            <Link href="/shop" className="hover:text-pink-500 transition">
-              Shop
-            </Link>
-            <Link href="/contact" className="hover:text-pink-500 transition">
-              Contact
-            </Link>
+            <Link href="/" className="hover:text-pink-500 transition">Home</Link>
+            <Link href="/about-us" className="hover:text-pink-500 transition">About us</Link>
+            <Link href="/product" className="hover:text-pink-500 transition">Products</Link>
+            <Link href="/contact" className="hover:text-pink-500 transition">Contact</Link>
+            <Link href="/faq" className="hover:text-pink-500 transition">Faq</Link>
           </div>
 
-          {/* Right Section: Hamburger Menu and Search Bar */}
-          <div className="flex items-center space-x-4 pr-10 md:pr-10 sm:pr-10">
-            {/* Hamburger Icon */}
+          {/* Right Section */}
+          <div className="flex items-center space-x-1">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="block md:hidden focus:outline-none"
+              className="block md:hidden focus:outline-none order-2"
             >
               <svg
                 className="w-6 h-6"
@@ -105,15 +86,13 @@ const Navbar = () => {
                 ></path>
               </svg>
             </button>
-
-            {/* Search Bar */}
-            <div className="hidden md:flex items-center">
+            <div className="flex md:flex sm:flex lg:flex items-center order-1 ">
               <input
                 type="text"
                 placeholder="Search"
-                className="px-4 py-1 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pink-500 text-gray-700"
+                className="px-2 py-1 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pink-500 text-gray-700"
               />
-              <button className="bg-pink-500 text-white p-2 hover:bg-pink-600 transition">
+              <button className="bg-pink-500 text-white p-2 hover:bg-pink-600 transition mr-5">
                 <FaSearch />
               </button>
             </div>
@@ -123,42 +102,12 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="bg-gray-50 border-t border-gray-200 md:hidden">
-            <Link
-              href="/"
-              className="block px-4 py-2 hover:bg-pink-100 transition"
-            >
-              Home
-            </Link>
-            <Link
-              href="/pagess"
-              className="block px-4 py-2 hover:bg-pink-100 transition"
-            >
-              Pages
-            </Link>
-            <Link
-              href="/product"
-              className="block px-4 py-2 hover:bg-pink-100 transition"
-            >
-              Products
-            </Link>
-            <Link
-              href="/blog"
-              className="block px-4 py-2 hover:bg-pink-100 transition"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/shop"
-              className="block px-4 py-2 hover:bg-pink-100 transition"
-            >
-              Shop
-            </Link>
-            <Link
-              href="/contact"
-              className="block px-4 py-2 hover:bg-pink-100 transition"
-            >
-              Contact
-            </Link>
+            <Link href="/" className="block px-4 py-2 hover:text-pink-500 transition">Home</Link>
+            <Link href="/about-us" className="block px-4 py-2 hover:text-pink-500 transition">About us</Link>
+            <Link href="/product" className="block px-4 py-2 hover:text-pink-500 transition">Products</Link>
+            <Link href="/shop" className="block px-4 py-2 hover:text-pink-500 transition">Shop</Link>
+            <Link href="/contact" className="block px-4 py-2 hover:text-pink-500 transition">Contact</Link>
+            <Link href="/pagess/faq" className="hover:text-pink-500 transition">FAQ</Link>
           </div>
         )}
       </nav>
@@ -167,7 +116,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-

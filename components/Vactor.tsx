@@ -9,7 +9,7 @@ const FeaturedProduct = () => {
     <div className="bg-white min-h-screen px-4 py-8">
       {/* Heading */}
       <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
-        Featured Products
+        Our Features
       </h1>
 
       {/* Grid Container for Products */}

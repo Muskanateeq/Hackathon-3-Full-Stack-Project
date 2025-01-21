@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FaPenNib, FaCalendarAlt } from 'react-icons/fa';
+import Link from "next/link"
 
 export default function Home() {
   const blogs = [
@@ -62,12 +63,12 @@ export default function Home() {
               {/* Blog Description */}
               <p className="text-sm text-gray-400 mt-2">{blog.description}</p>
               {/* Read More Link */}
-              <a
-                href="#"
+              <Link
+                href="/blog"
                 className="text-blue-950 font-medium mt-3 block underline decoration-blue-950 group-hover:text-pink-500 group-hover:decoration-pink-500 transition"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
         ))}

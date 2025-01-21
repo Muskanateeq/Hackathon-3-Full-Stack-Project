@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // useRouter for redirection
 import Link from 'next/link';
 import styles from './login.module.css';
-
+import Logo from "@/components/Logo"
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -34,6 +34,21 @@ const LoginPage = () => {
   };
 
   return (
+    <>
+            {/* Header Section */}
+            <div className="bg-gray-100 py-10">
+            <div className="pl-4 sm:pl-10 md:pl-32">
+              <h1 className="text-2xl sm:text-3xl font-semibold text-blue-950">
+                My Account
+              </h1>
+              <p className="mt-2 text-sm sm:text-base text-black">
+                Home
+                <span className="mx-1 text-black ">.</span>Pages
+                <span className="mx-1 text-pink-500">.</span>
+                <span className="text-pink-500">My Account</span>
+              </p>
+            </div>
+          </div>
     <div className={styles.container}>
       <div className={styles.formContainer}>
         <h2 className={styles.heading}>Login</h2>
@@ -78,11 +93,13 @@ const LoginPage = () => {
 
         <div className={styles.signupText}>
           <p>
-            {"Don't have an account?"}Create account <Link href="/signup" className={styles.signupLink}></Link>
+            {"Don't have an account?"}<Link href="/signup" className={styles.signupLink}>Signup</Link>
           </p>
         </div>
       </div>
     </div>
+    <Logo/>
+    </>
   );
 };
 

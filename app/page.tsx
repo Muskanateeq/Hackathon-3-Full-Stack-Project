@@ -8,7 +8,7 @@ import Hero4 from "@/components/Hero4"
 import Logo from "@/components/Logo"
 import Blog from "@/components/Blog"
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
       <Hero />

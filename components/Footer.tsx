@@ -4,24 +4,25 @@ import Link from "next/link"
 export default function Footer() {
     return (
       <footer className="bg-gray-100 text-gray-700 ">
-        <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 pl-12">
+        <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 ">
           {/* Footer Column 1 */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-4 font-sans pl-12">Hekto</h3>
   
-{/* Newsletter Signup */}
-<form className="flex pl-3">
-  <input
-    type="email"
-    placeholder="Email"
-    className="w-28 px-2 py-0.5 text-sm border border-gray-300 "
-  />
-        <div className="flex justify-center  md:justify-start">
-        <Link href="/login"><button className="bg-pink-500 text-white py-2 px-2  hover:bg-pink-600">
-              SignUp
-            </button></Link>
-          </div>
-</form>
+          {/* Newsletter Signup */}
+          <form className="flex pl-11">
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-28 px-2 py-0.5 text-sm border border-gray-300 "
+          />
+          <div className="flex justify-center  md:justify-start">
+          <Link href="/signup"><button className="bg-pink-500 text-white py-2 px-2  hover:bg-pink-600">
+                SignUp
+              </button>
+          </Link>
+            </div>
+        </form>
 
 
             <p className="mt-4 text-sm pl-12">

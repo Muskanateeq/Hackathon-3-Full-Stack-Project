@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 
 export default function ProductShowcase() {
   return (
@@ -51,9 +52,11 @@ export default function ProductShowcase() {
 
           {/* Add to Cart Section */}
           <div className="flex items-center space-x-6">
+            <Link href="/product">
             <button className="bg-gray-800 text-white px-6 py-2 text-sm font-semibold shadow-lg hover:bg-gray-700 transition">
-              Shop Now
+              order Now
             </button>
+            </Link>
           </div>
         </div>
 

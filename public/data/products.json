@@ -1,0 +1,255 @@
+[
+    {
+      "id": 1,
+      "name": "Alexy Chair",
+      "color": "Dark Gray",
+      "discountprice": 50,
+      "actualamount": 90,
+      "image": "/griddefault/product1.png",
+      "description": "A modern cantilever chair with a unique floating effect."
+    },
+    {
+      "id": 2,
+      "name": "Jack Mason Chair",
+      "color": "Light Pink",
+      "discountprice": 100,
+      "actualamount": 150,
+      "image": "/griddefault/product2.png",
+      "description": "An elegant armchair with plush cushions and a curved design for comfort."
+    },
+    {
+      "id": 3,
+      "name": "Alexy Chair",
+      "color": "Gray",
+      "discountprice": 50,
+      "actualamount": 90,
+      "image": "/griddefault/product3.png",
+      "description": "A modern cantilever chair with a unique floating effect."
+    },
+    {
+      "id": 4,
+      "name": "Fancy Accent Chair",
+      "color": "Pink",
+      "discountprice": 200,
+      "actualamount": 250,
+      "image": "/griddefault/product8.png",
+      "description": "An elegant armchair with plush cushions and a curved design for comfort."
+    },
+    {
+      "id": 5,
+      "name": "Maxyme Chair",
+      "color": "Gray",
+      "discountprice": 60,
+      "actualamount": 90,
+      "image": "/Tranding/product1.png",
+      "description": "A sturdy oak chair with a sleek and minimalist design."
+    },
+    {
+      "id": 6,
+      "name": "Soft Chair",
+      "color": "Red",
+      "discountprice": 40,
+      "actualamount": 70,
+      "image": "/Tranding/product2.png",
+      "description": "A sleek outdoor chair with natural wooden elements and a modern look."
+    },
+    {
+      "id": 7,
+      "name": "Stylish Dyson Chair",
+      "color": "White",
+      "discountprice": 70,
+      "actualamount": 90,
+      "image": "/Tranding/product3.png",
+      "description": "A spacious lounge chair with a quilted back and soft cushioning."
+    },
+    {
+      "id": 8,
+      "name": "Stylish Dyson Chair",
+      "color": "Black",
+      "discountprice": 70,
+      "actualamount": 90,
+      "image": "/Tranding/product4.png",
+      "description": "A spacious lounge chair with a quilted back and soft cushioning."
+    },
+    {
+      "id": 9,
+      "name": "Simple Accent Chair",
+      "color": "Gray",
+      "discountprice": 70,
+      "actualamount": 90,
+      "image": "/categories/product1.png",
+      "description": "A sleek outdoor chair with natural wooden elements and a modern look."
+    },
+    {
+      "id": 10,
+      "name": "Cantilever Chair",
+      "color": "White",
+      "discountprice": 60,
+      "actualamount": 90,
+      "image": "/categories/product2.png",
+      "description": "Durable and lightweight plastic chair for everyday use."
+    },
+    {
+      "id": 11,
+      "name": "Maxyme Chair",
+      "color": "Gray",
+      "discountprice": 70,
+      "actualamount": 90,
+      "image": "/categories/product3.png",
+      "description": "A sturdy oak chair with a sleek and minimalist design."
+    },
+    {
+      "id": 12,
+      "name": "Stylish Corn Chair",
+      "color": "Light Pink",
+      "discountprice": 200,
+      "actualamount": 250,
+      "image": "/Hero/sofa.png",
+      "description": "A vibrant pink velvet chair with a retro-inspired design."
+    },
+    {
+      "id": 13,
+      "name": "Cantilever Chair",
+      "color": "White",
+      "discountprice": 70,
+      "actualamount": 90,
+      "image": "/latest/product3.png",
+      "description": "A tufted chair with acrylic legs for a chic, modern touch."
+    },
+    {
+      "id": 14,
+      "name": "Tyler Soft Chair",
+      "color": "Golden",
+      "discountprice": 60,
+      "actualamount": 90,
+      "image": "/featured/product2.png",
+      "description": "Iconic three-legged chair with faux leather and ash plywood frame."
+    },
+    {
+      "id": 15,
+      "name": "Kutlary Chair",
+      "color": "Light Blue",
+      "discountprice": 60,
+      "actualamount": 90,
+      "image": "/featured/product3.png",
+      "description": "Durable and lightweight wooden chair for everyday use."
+    },
+    {
+      "id": 16,
+      "name": "Jackson Fancy chair",
+      "color": "Golden",
+      "discountprice": 100,
+      "actualamount": 150,
+      "image": "/featured/product4.png",
+      "description": "A luxurious armchair with velvet fabric and golden metal legs."
+    },
+    {
+      "id": 17,
+      "name": "Aurby Modern Chair",
+      "color": "Brown",
+      "discountprice": 150,
+      "actualamount": 200,
+      "image": "/latest/product1.png",
+      "description": "An elegant armchair with plush cushions and a curved design for comfort."
+    },
+    {
+      "id": 18,
+      "name": "Madison Chair",
+      "color": "Yellow",
+      "discountprice": 90,
+      "actualamount": 120,
+      "image": "/latest/product2.png",
+      "description": "A foldable wooden chair with a padded seat for extra comfort."
+    },
+    {
+      "id": 19,
+      "name": "Jack Mason Chair",
+      "color": "Light Pink",
+      "discountprice": 100,
+      "actualamount": 150,
+      "image": "/griddefault/product2.png",
+      "description": "An acrylic dining chair with a sleek and minimalist Nordic design."
+    },
+    {
+      "id": 20,
+      "name": "King Accent Chair",
+      "color": "White",
+      "discountprice": 100,
+      "actualamount": 150,
+      "image": "/latest/product4.png",
+      "description": "A luxurious shell-shaped chair with gold brass metal legs."
+    },
+    {
+      "id": 21,
+      "name": "Stylish Dyson Chair",
+      "color": "Black",
+      "discountprice": 70,
+      "actualamount": 90,
+      "image": "/latest/product5.png",
+      "description": "A modern cantilever chair with a unique floating effect."
+    },
+    {
+      "id": 22,
+      "name": "Jackson Fancy chair",
+      "color": "Golden",
+      "discountprice": 100,
+      "actualamount": 150,
+      "image": "/latest/product6.png",
+      "description": "A luxurious armchair with velvet fabric and golden metal legs."
+    },
+    {
+        "id": 23,
+        "name": "Fancy Accent Chair",
+        "color": "Pink",
+        "discountprice": 200,
+        "actualamount": 250,
+        "image": "/griddefault/product8.png",
+        "description": "A comfortable set of chairs with soft cushions for relaxation."
+    },
+    {
+        "id": 24,
+        "name": "Maxyme chair",
+        "color": "Gray",
+        "discountprice": 70,
+        "actualamount": 90,
+        "image": "/Tranding/product1.png",
+        "description": "A sturdy oak chair with a sleek and minimalist design."
+    },
+    {
+      "id": 25,
+      "name": "King Accent Chair",
+      "color": "White",
+      "discountprice": 100,
+      "actualamount": 150,
+      "image": "/latest/product4.png",
+      "description": "A luxurious shell-shaped chair with gold brass metal legs."
+    },
+
+    {
+      "id": 26,
+      "name": "Italian Sofa",
+      "color": "Light Pink",
+      "discountprice": 700,
+      "actualamount": 850,
+      "image": "/Hero2/sofa2.png",
+      "description": "An elegant armchair with plush cushions and a curved design for comfort."
+    },
+    {
+      "id": 27,
+      "name": "Eams Sofa Compact",
+      "color": "Dark Brown",
+      "discountprice": 650,
+      "actualamount": 700,
+      "image": "/Hero3/sofa1.png",
+      "description": "Compact armchair with a cozy design for small spaces."
+    },
+    {
+      "id": 28,
+      "name": "Aurby Modern Chair",
+      "color": "Brown",
+      "discountprice": 150,
+      "actualamount": 200,
+      "image": "/latest/product1.png",
+      "description": "An elegant armchair with plush cushions and a curved design for comfort."
+    }
+  ]

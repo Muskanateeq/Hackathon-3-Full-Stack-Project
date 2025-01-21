@@ -6,7 +6,6 @@
   align-items: center;
   height: 100vh;
   background-color: white;
-  border: 1px solid #ccc;
 }
 
 .formContainer {
@@ -65,7 +64,7 @@
   justify-content: space-between; /* Aligns Forgot Password and Remember Me on the same line */
   align-items: center;
   margin-top: 10px;
-  color: #0070f3;
+  color: rgb(243, 70, 177);
 }
 
 .forgotLink {
@@ -100,7 +99,7 @@
 }
 
 .signupLink {
-  color: #0070f3;
+  color: rgb(243, 70, 177);
 }
 
 /* login.module.css */
